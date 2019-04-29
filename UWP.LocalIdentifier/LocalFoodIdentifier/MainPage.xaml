@@ -1,0 +1,55 @@
+﻿<Page
+    x:Class="LocalFoodIdentifier.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LocalFoodIdentifier"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="324"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Local Food Identifier"
+                   HorizontalAlignment="Center"
+                   Style="{StaticResource TitleTextBlockStyle}"
+                   Grid.Row="0"
+                   Margin="24"/>
+
+        <Button x:Name="StartButton" 
+                Width="75"
+                Height="75"
+                Click="StartButtonOnClick"
+                Grid.Row="1"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Margin="0,0,0,24">
+            <Button.Content>
+                <SymbolIcon Symbol="OpenFile"/>
+            </Button.Content>
+        </Button>
+
+        <Image x:Name="UIPreviewImage"
+               Stretch="Uniform"
+               MaxWidth="300"
+               MaxHeight="300"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center"
+               Grid.Row="2"
+               Margin="0,0,0,24"/>
+
+        <ScrollViewer Grid.Row="4"
+                      Margin="12,0,12,24">
+            <TextBlock x:Name="StatusBlock" 
+                   FontWeight="Bold" 
+                   TextWrapping="Wrap"  
+                   Text="Press on the button to select and image and predict it!" />
+        </ScrollViewer>
+    </Grid>
+</Page>
