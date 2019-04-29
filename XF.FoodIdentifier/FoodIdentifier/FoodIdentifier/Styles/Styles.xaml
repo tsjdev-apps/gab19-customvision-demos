@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    xmlns:controls="clr-namespace:FoodIdentifier.Controls"
+                    x:Class="FoodIdentifier.Styles.Styles">
+
+    <Style x:Key="GochiHandLabelStyle"
+           TargetType="Label">
+        <Setter Property="FontFamily"
+                Value="{OnPlatform Android=GochiHand-Regular.ttf#GochiHand, iOS=GochiHand}" />
+        <Setter Property="FontSize"
+                Value="Large" />
+        <Setter Property="HorizontalTextAlignment"
+                Value="Center" />
+        <Setter Property="VerticalOptions"
+                Value="Center" />
+        <Setter Property="HorizontalOptions"
+                Value="Center" />
+    </Style>
+
+
+
+    <Style TargetType="NavigationPage"
+           ApplyToDerivedTypes="True">
+        <Setter Property="BarBackgroundColor"
+                Value="{DynamicResource ColorAccent}" />
+        <Setter Property="BarTextColor"
+                Value="{DynamicResource ColorWhite}" />
+    </Style>
+
+    <Style TargetType="ActivityIndicator">
+        <Setter Property="VerticalOptions"
+                Value="Center" />
+        <Setter Property="HorizontalOptions"
+                Value="Center" />
+        <Setter Property="WidthRequest"
+                Value="50" />
+        <Setter Property="HeightRequest"
+                Value="50" />
+        <Setter Property="Color"
+                Value="{DynamicResource ColorAccent}" />
+    </Style>
+
+    <Style x:Key="ButtonBaseStyle"
+           TargetType="Button">
+        <Setter Property="TextColor"
+                Value="{DynamicResource ColorWhite}" />
+        <Setter Property="BackgroundColor"
+                Value="{DynamicResource ColorLightGray}" />
+        <Setter Property="Padding"
+                Value="4,3" />
+        <Setter Property="VerticalOptions"
+                Value="Center" />
+        <Setter Property="HorizontalOptions"
+                Value="FillAndExpand" />
+    </Style>
+
+    <Style x:Key="ButtonAccentStyle"
+           TargetType="Button"
+           BasedOn="{StaticResource ButtonBaseStyle}">
+        <Setter Property="TextColor"
+                Value="{DynamicResource ColorWhite}" />
+        <Setter Property="BackgroundColor"
+                Value="{DynamicResource ColorAccent}" />
+    </Style>
+
+    <Style TargetType="controls:HorizontalLine">
+        <Setter Property="Color"
+                Value="{DynamicResource ColorLightGray}" />
+    </Style>
+
+    <Style x:Key="FrameBaseStyle"
+           TargetType="Frame">
+        <Setter Property="Padding"
+                Value="0" />
+    </Style>
+
+    <Style x:Key="FrameDialogStyle"
+           TargetType="Frame"
+           BasedOn="{StaticResource FrameBaseStyle}">
+        <Setter Property="BackgroundColor"
+                Value="{DynamicResource ColorWhite}" />
+        <Setter Property="CornerRadius"
+                Value="2" />
+        <Setter Property="Margin"
+                Value="20" />
+        <Setter Property="VerticalOptions"
+                Value="Center" />
+        <Setter Property="HorizontalOptions"
+                Value="Fill" />
+    </Style>
+
+    <Style x:Key="LabelBaseStyle"
+           TargetType="Label">
+        <Setter Property="TextColor"
+                Value="{DynamicResource ColorBlack}" />
+    </Style>
+
+    <Style x:Key="LabelH2Style"
+           TargetType="Label"
+           BasedOn="{StaticResource LabelBaseStyle}">
+        <Setter Property="FontSize"
+                Value="Large" />
+    </Style>
+
+    <Style x:Key="LabelAccentStyle"
+           TargetType="Label"
+           BasedOn="{StaticResource LabelBaseStyle}">
+        <Setter Property="TextColor"
+                Value="{DynamicResource ColorAccent}" />
+        <Setter Property="FontSize"
+                Value="Large" />
+    </Style>
+
+</ResourceDictionary>

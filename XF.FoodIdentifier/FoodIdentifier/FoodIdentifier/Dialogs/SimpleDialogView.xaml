@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:FoodIdentifier.Controls"
+             x:Class="FoodIdentifier.Dialogs.SimpleDialogView">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Label x:Name="DialogTitleLabel"
+               Style="{StaticResource LabelH2Style}"
+               Margin="20,20,20,10"
+               Grid.Row="0" />
+
+        <ScrollView Grid.Row="1"
+                    Margin="20,0">
+            <Label x:Name="DialogMessageLabel"
+                   FontSize="Medium" />
+        </ScrollView>
+
+        <controls:HorizontalLine Grid.Row="2" />
+
+        <Label x:Name="DialogAcceptLabel"
+               Style="{StaticResource LabelAccentStyle}"
+               Margin="20,10"
+               VerticalOptions="Center"
+               HorizontalOptions="EndAndExpand"
+               Grid.Row="3" />
+
+    </Grid>
+
+</ContentView>

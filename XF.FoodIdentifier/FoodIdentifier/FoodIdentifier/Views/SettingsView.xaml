@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:markupextensions="clr-namespace:FoodIdentifier.MarkupExtensions"
+             x:Class="FoodIdentifier.Views.SettingsView"
+             Visual="Material"
+             Title="{markupextensions:Translate SettingsViewPageTitle}"
+             Padding="18">
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <ScrollView>
+                <StackLayout Spacing="18">
+                    <Entry Text="{Binding PredictionKey}"
+                       Placeholder="{markupextensions:Translate SettingsPredictionKeyPlaceholder}" />
+
+                    <Entry Text="{Binding Endpoint}"
+                       Placeholder="{markupextensions:Translate SettingsEndpointPlaceholder}" />
+
+                    <Entry Text="{Binding ProjectId}"
+                       Placeholder="{markupextensions:Translate SettingsProjectIdPlaceholder}" />
+
+                    <Entry Text="{Binding IterationName}"
+                       Placeholder="{markupextensions:Translate SettingsIterationNamePlaceholder}" />
+                </StackLayout>
+            </ScrollView>
+            
+            <Button Image="save"
+                    Command="{Binding SaveCommand}"
+                    Style="{StaticResource ButtonAccentStyle}"
+                    Grid.Row="1" />
+
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>
