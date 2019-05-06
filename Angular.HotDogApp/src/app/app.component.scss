@@ -1,0 +1,76 @@
+
+
+h1 {
+    margin-left: 25%;
+    margin-top: 11%;
+    font-size: 40px;
+    color: white;
+}
+
+::ng-deep label {
+    color: white !important;
+}
+::ng-deep .mat-form-field-underline {
+    color:white !important;
+}
+
+.wrapper {
+    color: white;
+    padding: 1% auto;
+    margin: 1% 25%;
+    font-size: 30px;
+
+}
+
+.image-form {
+    max-height: 350px;
+    padding-bottom: 20px;
+    display: flex;
+}
+
+.image-box {
+    height: 300px;
+    width: 400px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border: 1px solid white;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    
+
+}
+
+.image-box-wrapper {
+    flex: 1;
+    margin-right: 1%;
+}
+
+.image-url-wrapper {
+  
+    flex: 1;
+}
+
+.image-preview {
+    max-width: 300px;
+    max-height: 300px;
+    // width:100%;
+    // margin: 10px auto;
+    
+}
+
+.url-input-field {
+   font-size: 26px;
+   width: 450px;
+}
+.url-input {
+    color: white;
+    
+}
+.result-field {
+    font-size: 24px;
+}
+
+.button {
+    margin-top: 150px;
+}

@@ -1,0 +1,14 @@
+<div class="wrapper">
+  <h1 mat-dialog-title>Is it a Hot Dog?</h1>
+  <div mat-dialog-content>
+    <p>{{resultString}}</p>
+    <div *ngIf='betterTag != ""'>
+      <p>{{betterTag}}</p>
+    </div>
+    <p>{{certainty}}</p>
+  </div>
+  <div mat-dialog-actions>
+
+    <button class="button" mat-button (click)="onNoClick()" cdkFocusInitial>Ok</button>
+  </div>
+</div>

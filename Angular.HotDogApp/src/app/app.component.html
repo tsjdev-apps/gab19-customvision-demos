@@ -1,0 +1,25 @@
+<h1>Ultimate HotDog App</h1>
+
+<div class="wrapper">
+    <div class="image-form">
+        <div class="image-box-wrapper">
+            <p>Upload an Image </p>
+            <div class="image-box">
+                <img [src]=fileUrl *ngIf="filePresent" class="image-preview">
+            </div>
+            <!-- <input #fileInput type="file" accept="image/*" (change)="onFileChanged($event)"> -->
+            <button type="button" mat-raised-button (click)="fileInput.click()">Choose File</button>
+            <input hidden (change)="onFileChanged($event)" #fileInput type="file" accept="image/* " id="file">
+
+        </div>
+        <div class="image-url-wrapper">
+            <p> Or paste an Url</p>
+            <mat-form-field class="url-input-field">
+                <input class="url-input" matInput placeholder="Image URL" [formControl]="url">
+            </mat-form-field>
+        </div>
+    </div>
+
+    <button class="button" mat-raised-button (click)="getPrediction()">Analyize Image</button>
+
+</div>
