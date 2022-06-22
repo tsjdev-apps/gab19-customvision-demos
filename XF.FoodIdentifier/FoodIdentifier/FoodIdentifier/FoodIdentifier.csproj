@@ -14,7 +14,7 @@
     <PackageReference Include="Microsoft.AppCenter.Analytics" Version="1.14.0" />
     <PackageReference Include="Microsoft.AppCenter.Crashes" Version="1.14.0" />
     <PackageReference Include="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction" Version="1.0.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="Rg.Plugins.Popup" Version="1.1.5.188" />
     <PackageReference Include="Unity.Container" Version="5.10.3" />
     <PackageReference Include="Unity.ServiceLocation" Version="5.10.0" />
